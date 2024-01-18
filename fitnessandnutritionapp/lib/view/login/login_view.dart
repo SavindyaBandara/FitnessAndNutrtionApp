@@ -1,7 +1,8 @@
 import 'package:fitnessandnutritionapp/common/color_extension.dart';
 import 'package:fitnessandnutritionapp/common_widget/round_button.dart';
 import 'package:fitnessandnutritionapp/common_widget/round_textfield.dart';
-import 'package:fitnessandnutritionapp/view/home/home_view.dart';
+//import 'package:fitnessandnutritionapp/view/home/home_view.dart';
+import 'package:fitnessandnutritionapp/view/main_tab/main_tab_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
@@ -66,41 +67,33 @@ class _LoginViewState extends State<LoginView> {
                           ),
                 ),
                 Row(
-                  // crossAxisAlignment: CrossAxisAlignment.,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    IconButton(
-                      onPressed: () {
-                        setState(() {
-                          isCheck = !isCheck;
-                        });
-                      },
-                      icon: Icon(
-                        isCheck
-                            ? Icons.check_box_outlined
-                            : Icons.check_box_outline_blank_outlined,
-                        color: TColor.grey,
-                        size: 20,
-                      ),
-                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Forgot your password?",
-                      style: TextStyle(
-                          color: TColor.grey,
-                          fontSize: 10,
-                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top:8),
+                      child:Expanded(
+                      child: Text(
+                        "Forgot your password?",
+                        style: TextStyle(
+                            color: TColor.grey,
+                            fontSize: 10,
+                      ),
+                      ),
+                      )
                     ),
                   ],
-                    )
+                    ),
+                    
                   ],
                 ),
                 SizedBox(
                   height: media.width * 0.2,
                 ),
                  RoundButton(title: "Login ", onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeView()  ));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MainTabView()  ));
                 }, fontSize: 16,),
                 SizedBox(
                   height: media.width * 0.04,

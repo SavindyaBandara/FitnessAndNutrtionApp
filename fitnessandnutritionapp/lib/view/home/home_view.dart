@@ -31,7 +31,7 @@ class _HomeViewState extends State<HomeView> {
                   height: media.width * 0.05,
                 ),
                         Text(
-                          "Hello User",
+                          "Hello User..",
                           style: TextStyle(
                               color: TColor.black,
                               fontSize: 20,
@@ -63,16 +63,28 @@ class _HomeViewState extends State<HomeView> {
                 SizedBox(
                   height: media.width * 0.05,
                 ),
-                
+                Container(
+                  height: media.width*0.4,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: TColor.primaryG),
+                      borderRadius: BorderRadius.circular(media.width * 0.075)),
+                      child: Stack(
+                        alignment:Alignment.center,
+                        children: [
+                          Image.asset(
+                      "assets/images/bg_dots.png",
+                      height: media.width * 0.4,
+                      width: double.maxFinite,
+                      fit: BoxFit.fitHeight,
+                    ),
+                          
+                        ],
+                         ),
+                )
                 ],
                 ),
-                
-               
-                
-              ),
-            
-        ),
-           
+              ), 
+        ),      
       ),
       );
    

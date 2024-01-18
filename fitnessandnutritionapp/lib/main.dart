@@ -40,8 +40,8 @@ class MyApp extends StatelessWidget {
         fontFamily: "FiraSans"
       ),
       //home: const OnboardingView(),
-      home: const StartedView(),
-      //home: const SignUpView(),
+      //home: const StartedView(),
+      home: const SignUpView(),
     );
   }
 }

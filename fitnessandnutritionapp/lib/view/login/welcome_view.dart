@@ -44,7 +44,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                     fontWeight: FontWeight.w700),
               ),
               Text(
-                "You are all set now, let’s reach your\ngoals together with us",
+                "You are all set now, let's reach your\ngoals together with us",
                 textAlign: TextAlign.center,
                 style: TextStyle(color: TColor.grey, fontSize: 12),
               ),
